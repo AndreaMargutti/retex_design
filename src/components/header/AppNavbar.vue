@@ -12,5 +12,5 @@ export default {
     <h2>navbar</h2>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 </style>

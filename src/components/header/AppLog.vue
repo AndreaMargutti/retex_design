@@ -12,5 +12,5 @@ export default {
     <h2>Log</h2>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 </style>

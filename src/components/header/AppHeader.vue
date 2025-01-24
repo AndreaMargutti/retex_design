@@ -5,7 +5,18 @@ import AppNavbar from './AppNavbar.vue';
 export default {
   data() {
     return {
-     name: 'AppHeader', 
+     name: 'AppHeader',
+
+     navItems: [
+        'Tutti i temi',
+        'Ambiente',
+        'Economia',
+        'Mondo',
+        'Non Profit',
+        'Politica',
+        'Società',
+        'Welfare'
+     ]
     }
   },
   components: {

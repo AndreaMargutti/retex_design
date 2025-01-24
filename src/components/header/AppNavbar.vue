@@ -32,8 +32,8 @@ export default {
 
   <!-- sezione lista -->
 
-  <section>
-    <ul>
+  <section class="p-2">
+    <ul class="d-flex gap-3">
       <li v-for="item in navItems">
         {{ item }}
       </li>
@@ -51,4 +51,12 @@ export default {
     border-style: solid;
     border-width: 0px 1px 0px 1px;
 }
+
+// lista
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
 </style>

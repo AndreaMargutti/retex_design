@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <h2>Log</h2>
+  
 </template>
 
 <style scoped lang="scss">

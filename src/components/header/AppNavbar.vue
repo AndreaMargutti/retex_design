@@ -4,6 +4,10 @@ export default {
     return {
         name: 'AppNavbar', 
     }
+  },
+
+  props: {
+    navItems: Array
   }
 }
 </script>
@@ -29,7 +33,11 @@ export default {
   <!-- sezione lista -->
 
   <section>
-
+    <ul>
+      <li v-for="item in navItems">
+        {{ item }}
+      </li>
+    </ul>
   </section>
 
 </template>

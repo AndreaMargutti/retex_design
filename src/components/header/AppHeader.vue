@@ -19,6 +19,7 @@ export default {
      ]
     }
   },
+  
   components: {
     AppLog,
     AppNavbar,
@@ -28,7 +29,7 @@ export default {
 
 <template>
     <AppLog />
-    <AppNavbar />
+    <AppNavbar :navItems="navItems"/>
 </template>
 
 <style scoped lang="scss">

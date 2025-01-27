@@ -3,6 +3,7 @@ export default {
   data() {
     return {
         name: 'AppNavbar',
+        // variabile per funzione operMenus e v-show
         list: true,
     }
   },
@@ -13,7 +14,7 @@ export default {
 
   methods: {
      openMenu () {
-        // gestisco la visibilita di alcune parti di pagina
+        // assegna alla varaiabile il suo valore opposto
         this.list = !this.list;
       }
   },
@@ -35,7 +36,7 @@ export default {
           </svg>
     </div>
     
-    <div class="p-3 border-div">
+    <div v-show="list" class="p-3 border-div">
       <!-- icona lente -->
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" color="red">
         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -47,7 +48,7 @@ export default {
   <div v-show="list">
     <section v-show="list" class="d-flex justify-content-between">
       <ul class="d-flex gap-3">
-        <li v-for="item in navItems">
+        <li v-for="item in navItems" class="pe-3">
           <h3>{{ item }}</h3>
         </li>
       </ul>

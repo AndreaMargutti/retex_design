@@ -14,6 +14,7 @@ export default {
     AppMain,
   }
 }
+
 </script>
 
 <template>

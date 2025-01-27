@@ -1,9 +1,15 @@
 <script>
+import AppCTA from './AppCTA.vue';
+
 export default {
   data() {
     return {
      name: 'AppMain', 
     }
+  },
+
+  components: {
+    AppCTA,
   }
 }
 </script>
@@ -25,6 +31,10 @@ export default {
       </figure>
     </div>
   </section>
+
+  <!-- Inserisco componente CTA -->
+  <AppCTA />
+
 </template>
 
 <style scoped lang="scss">

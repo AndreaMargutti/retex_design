@@ -24,8 +24,6 @@ export default {
 <style lang="scss">
   // importo bootstrap
   @use  '../node_modules/bootstrap/scss/bootstrap.scss' as *;
-  // importo il foglio delle variabili
-  @use './style/variables.scss' as *;
   // importo il foglio generale
   @use './style/general.scss' as *;
 </style>

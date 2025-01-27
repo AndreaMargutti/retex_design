@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <section class="d-flex justify-content-between p-4">
+    <section class="d-flex justify-content-between py-5 px-3">
         <h1>{{ navItems[0] }}</h1>
         <ul class="d-flex align-self-end">
             <li v-for="(item, index) in navItems" :key="item">
@@ -53,6 +53,8 @@ export default {
         border: 2px solid black;
         border-radius: 10px;
         box-shadow: -3px 3px ;
+        text-transform: uppercase;
+        font-weight: 600;
     }
 
 </style>

@@ -68,31 +68,31 @@ export default {
 
   <section id="hamburger" v-show="!list">
     <div class="row">
-        <div class="col">
-          <h1>Articoli</h1>
+        <div class="col border border-dark ham-col">
+          <h3>Articoli</h3>
           <p>Trend, dati e novita del Terzo Settore</p>
         </div>
-        <div class="col">
-          <h1>Storie</h1>
+        <div class="col border border-dark ham-col">
+          <h3>Storie</h3>
           <p>Letture ed approfondimenti dei fenomeni complessi</p>
         </div>
-        <div class="col">
-          <h1>Interviste</h1>
+        <div class="col border border-dark ham-col">
+          <h3>Interviste</h3>
           <p>Racconti reali di persone ed organizzazioni</p>
         </div>
     </div>
     
     <div class="row">
-      <div class="col">
-        <h1>Opinioni</h1>
+      <div class="col border border-dark ham-col">
+        <h3>Opinioni</h3>
         <p>Riflessioni e confronti dei nostri opinionisti</p>
       </div>
-      <div class="col">
-        <h1>Podcast</h1>
+      <div class="col border border-dark ham-col">
+        <h3>Podcast</h3>
         <p>Un luogo per dare voce ai protagonisti della sostenibilita</p>
       </div>
-      <div class="col">
-        <h1>Bookazine</h1>
+      <div class="col border border-dark ham-col">
+        <h3>Bookazine</h3>
         <p>Una rivista da leggere e un libro da conservare</p>
       </div>
     </div>
@@ -132,6 +132,21 @@ h3 {
 
 h4 {
   margin-bottom: 0;
+}
+
+// sezione hamburger menu
+
+.ham-col {
+  height: 300px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
 }
 
 </style>

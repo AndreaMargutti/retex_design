@@ -3,7 +3,7 @@ export default {
   data() {
     return {
         name: 'AppNavbar',
-        list: true,
+        list: false,
     }
   },
 
@@ -46,24 +46,57 @@ export default {
   </section>
 
   <!-- sezione lista -->
-<div v-show="list">
-  <section v-show="list" class="d-flex justify-content-between">
-    <ul class="d-flex gap-3">
-      <li v-for="item in navItems">
-        <h3>{{ item }}</h3>
-      </li>
-    </ul>
+  <div v-show="list">
+    <section v-show="list" class="d-flex justify-content-between">
+      <ul class="d-flex gap-3">
+        <li v-for="item in navItems">
+          <h3>{{ item }}</h3>
+        </li>
+      </ul>
 
-    <div class="d-flex align-items-center gap-1 pe-3">
-      <h4>Aa</h4>
-      <!-- image icon -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
-        <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
-      </svg>
+      <div class="d-flex align-items-center gap-1 pe-3">
+        <h4>Aa</h4>
+        <!-- image icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+          <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+        </svg>
+      </div>
+    </section>
+  </div>
+
+  <!-- sezione hamburger menu -->
+
+  <section id="hamburger" v-show="!list">
+    <div class="row">
+        <div class="col">
+          <h1>Articoli</h1>
+          <p>Trend, dati e novita del Terzo Settore</p>
+        </div>
+        <div class="col">
+          <h1>Storie</h1>
+          <p>Letture ed approfondimenti dei fenomeni complessi</p>
+        </div>
+        <div class="col">
+          <h1>Interviste</h1>
+          <p>Racconti reali di persone ed organizzazioni</p>
+        </div>
+    </div>
+    
+    <div class="row">
+      <div class="col">
+        <h1>Opinioni</h1>
+        <p>Riflessioni e confronti dei nostri opinionisti</p>
+      </div>
+      <div class="col">
+        <h1>Podcast</h1>
+        <p>Un luogo per dare voce ai protagonisti della sostenibilita</p>
+      </div>
+      <div class="col">
+        <h1>Bookazine</h1>
+        <p>Una rivista da leggere e un libro da conservare</p>
+      </div>
     </div>
   </section>
-  
-</div>
 
 </template>
 

@@ -32,7 +32,7 @@ export default {
 
   <!-- sezione lista -->
 
-  <section class="p-2 py-3 d-flex justify-content-between">
+  <section class=" d-flex justify-content-between">
     <ul class="d-flex gap-3">
       <li v-for="item in navItems">
         <h3>{{ item }}</h3>
@@ -60,12 +60,20 @@ export default {
     border-width: 0px 1px 0px 1px;
 }
 
-// lista
+// sezione lista
 
 ul {
   list-style-type: none;
   margin-bottom: 0;
   padding-left: 1.2rem;
+}
+
+li {
+  padding: 25px 0;
+}
+
+ul > :first-child {
+  border-bottom: 10px solid red;
 }
 
 h3 {

@@ -3,7 +3,7 @@ export default {
   data() {
     return {
         name: 'AppNavbar',
-        list: false,
+        list: true,
     }
   },
 
@@ -13,7 +13,7 @@ export default {
 
   methods: {
      openMenu () {
-        //inserisco o tolgo classe d-none
+        // gestisco la visibilita di alcune parti di pagina
         this.list = !this.list;
       }
   },
@@ -66,7 +66,7 @@ export default {
 
   <!-- sezione hamburger menu -->
 
-  <section id="hamburger" v-show="!list">
+  <section id="hamburger" v-show="!list" class="border-bottom-0">
     <div class="row">
         <div class="col border border-dark ham-col">
           <h3>Articoli</h3>
@@ -94,6 +94,27 @@ export default {
       <div class="col border border-dark ham-col">
         <h3>Bookazine</h3>
         <p>Una rivista da leggere e un libro da conservare</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col border border-dark border-bottom-0 ham-ft">
+        <h6>Chi siamo</h6>
+      </div>
+      <div class="col border border-dark border-bottom-0 ham-ft">
+        <h6>Comitato Editoriale</h6>
+      </div>
+      <div class="col border border-dark border-bottom-0 ham-ft">
+        <h6>Servizi</h6>
+      </div>
+      <div class="col border border-dark border-bottom-0 ham-ft">
+        <h6>Agenda/Eventi</h6>
+      </div>
+      <div class="col border border-dark border-bottom-0 ham-ft">
+        <h6>Mappa dell'attivismo</h6>
+      </div>
+      <div class="col border border-dark border-bottom-0 ham-ft">
+        <h6>Inchieste crowdfunding</h6>
       </div>
     </div>
   </section>
@@ -147,6 +168,11 @@ h4 {
     font-size: 2.5rem;
     font-weight: 800;
   }
+}
+
+.ham-ft {
+  padding: 25px;
+  text-align: center;
 }
 
 </style>

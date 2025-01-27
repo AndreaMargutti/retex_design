@@ -1,21 +1,21 @@
 <script>
-import AppJumbo from './AppJumbo.vue';
-
 export default {
   data() {
     return {
-        name: 'AppMain', 
+     name: 'AppJumbo', 
     }
   },
 
-  components: {
-    AppJumbo,
+  props: {
+    navItems: Array,
   }
 }
 </script>
 
 <template>
-    <AppJumbo />
+    <section>
+        <h1>{{ navItems[0] }}</h1>
+    </section>
 </template>
 
 <style scoped lang="scss">

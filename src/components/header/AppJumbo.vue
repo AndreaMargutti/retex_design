@@ -2,13 +2,13 @@
 export default {
   data() {
     return {
-     name:'AppJumbo', 
+     name:'AppJumbo',
     }
   },
 
   props: {
     navItems: Array,
-  }
+  },
 }
 </script>
 
@@ -17,7 +17,15 @@ export default {
         <h1>{{ navItems[0] }}</h1>
         <ul class="d-flex align-self-end">
             <li v-for="(item, index) in navItems" :key="item">
-                <button v-if="index > 0">{{ item }}</button>
+                <button v-if="index > 0"
+                    :class="{
+                        // se i bottoni corrispono a certe categorie allora gli assegno una determinata classe
+                        'btn-green': item === 'Ambiente',
+                        'btn-red': item === 'Mondo',
+                        'btn-bronze': item === 'Politica'
+                    }">
+                    {{ item }}
+                </button>
             </li>
         </ul>
     </section>
@@ -55,6 +63,18 @@ export default {
         box-shadow: -3px 3px ;
         text-transform: uppercase;
         font-weight: 600;
+    }
+    
+    .btn-green {
+        background-color: #e2f1e8;
+    }
+
+    .btn-red {
+        background-color: #f1dada;
+    }
+
+    .btn-bronze {
+        background-color: #f1f1e2;
     }
 
 </style>

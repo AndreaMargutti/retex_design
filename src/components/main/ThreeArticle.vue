@@ -24,7 +24,9 @@ export default {
                 </div>
             </figure>
         </div>
-        <div></div>
+        <div>
+            <!-- TODO: inserire gli altri due articoli -->
+        </div>
     </section>
 </template>
 

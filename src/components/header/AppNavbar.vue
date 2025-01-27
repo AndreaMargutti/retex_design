@@ -121,19 +121,15 @@ export default {
 </template>
 
 <style scoped lang="scss">
-  section {
-    border-bottom: 2px solid black;
-  }
 
-  .border-div {
-    border-style: solid;
-    border-width: 0px 1px 0px 1px;
+.border-div {
+  border-style: solid;
+  border-width: 0px 1px 0px 1px;
 }
 
 // sezione lista
 
 ul {
-  list-style-type: none;
   margin-bottom: 0;
   padding-left: 1.2rem;
 }

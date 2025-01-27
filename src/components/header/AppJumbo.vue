@@ -35,7 +35,6 @@ export default {
 
     section{
         background-color: #f4f4f4;
-        
     }
 
     h1 {
@@ -44,10 +43,6 @@ export default {
     }
 
     // lista
-
-    ul {
-        list-style-type: none;
-    }
 
     li {
         padding-right: 1.2rem;

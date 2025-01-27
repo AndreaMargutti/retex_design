@@ -1,5 +1,4 @@
 <script>
-import AppJumbo from './AppJumbo.vue';
 import AppLog from './AppLog.vue';
 import AppNavbar from './AppNavbar.vue';
 
@@ -24,7 +23,6 @@ export default {
   components: {
     AppLog,
     AppNavbar,
-    AppJumbo,
   }
 }
 </script>
@@ -32,7 +30,6 @@ export default {
 <template>
     <AppLog />
     <AppNavbar :navItems="navItems"/>
-    <AppJumbo :navItems="navItems"/>
 </template>
 
 <style scoped lang="scss">

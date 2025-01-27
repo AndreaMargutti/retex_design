@@ -35,7 +35,7 @@ export default {
   <section class="p-2">
     <ul class="d-flex gap-3">
       <li v-for="item in navItems">
-        {{ item }}
+        <h3>{{ item }}</h3>
       </li>
     </ul>
   </section>
@@ -57,6 +57,11 @@ export default {
 ul {
   list-style-type: none;
   margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+h3 {
+  font-weight: 600;
 }
 
 </style>

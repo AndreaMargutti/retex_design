@@ -11,19 +11,21 @@ export default {
 <template>
   <section>
     <div class="d-flex flex-column justify-content-end" id="main">
-      <p class="tag">MIGRANTI</p>
-      <h1>
-        Roccella Jonica, la Lampedusa che  <br>
-        l'Italia ignora
-      </h1>
-      <figure class="d-flex">
-        <img src="../../../public/e059a7a3367ff920d07e1938b4e8cd8f.jpeg" alt="profile-pic">
-        <div>
-          <h5>Di Alessandro Puglia</h5>
-          <h6>29 giugno 2022</h6>
+        <div id="article">
+          <p class="tag">MIGRANTI</p>
+          <h1>
+            Roccella Jonica, la Lampedusa che  <br>
+            l'Italia ignora
+          </h1>
+          <figure class="d-flex">
+            <img src="../../../public/e059a7a3367ff920d07e1938b4e8cd8f.jpeg" alt="profile-pic">
+            <div>
+              <h5>Di Alessandro Puglia</h5>
+              <h6>29 giugno 2022</h6>
+            </div>
+          </figure>
         </div>
-      </figure>
-    </div>
+      </div>
   </section>
 </template>
 
@@ -33,7 +35,7 @@ export default {
   }
 
   #main {
-    height: 700px;
+    min-height: 600px;
     background-image: url(../../../public/44146596a39e532d863a717f24411c63.jpeg);
     background-size: cover;
     padding: 1.2rem;
@@ -61,6 +63,19 @@ export default {
       height: 50px;
       border-radius: 50%;
       margin-right: 25px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    #main {
+      min-height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 1.5rem;
+    }
+
+    #article {
+      margin-top: 150px;
     }
   }
 </style>

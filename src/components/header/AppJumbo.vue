@@ -13,17 +13,18 @@ export default {
 </script>
 
 <template>
-    <section class="d-flex justify-content-between py-5 px-3">
-        <h1>{{ navItems[0] }}</h1>
-        <ul class="d-flex align-self-end">
-            <li v-for="(item, index) in navItems" :key="item">
-                <button v-if="index > 0"
+    <section class="navbar justify-content-between py-4 px-3">
+        <h1 class="nav-item">{{ navItems[0] }}</h1>
+        <ul class="nav-item d-flex gap-1 flex-wrap">
+            <li v-for="(item, index) in navItems" :key="item" class="">
+                <button v-if="index !== 0"
                     :class="{
                         // se i bottoni corrispono a certe categorie allora gli assegno una determinata classe
                         'btn-green': item === 'Ambiente',
                         'btn-red': item === 'Mondo',
                         'btn-bronze': item === 'Politica'
-                    }">
+                    }"
+                >
                     {{ item }}
                 </button>
             </li>
@@ -70,6 +71,18 @@ export default {
 
     .btn-bronze {
         background-color: #f1f1e2;
+    }
+
+    // sezione responsive
+    @media screen and (max-width: 576px) {
+        ul , li{
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            background-color: white !important;
+        }
     }
 
 </style>

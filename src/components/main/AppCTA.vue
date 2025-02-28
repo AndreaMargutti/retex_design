@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-sm-flex justify-content-between align-items-center py-5">
         <h1>Il tuo supporto e fondamentale</h1>
         <p>
             Dai il tuo contributo
@@ -23,7 +23,7 @@ export default {
 <style scoped lang="scss">
 
 div {
-    min-height: 200px;
+    min-height: 150px;
     padding: 1.2rem;
     background-color: #f4f1de;
 }

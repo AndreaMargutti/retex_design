@@ -24,7 +24,7 @@ export default {
 <template>
   
   <!-- sezione menu -->
-  <section class="d-flex justify-content-between">
+  <section class="topic-list d-flex justify-content-between">
     <div class="p-3 border-div">
          <!-- icona hamburger menu -->
          <svg v-show="list" v-on:click="openMenu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" color="red">
@@ -45,7 +45,7 @@ export default {
   </section>
 
   <!-- sezione lista -->
-  <div v-show="list">
+  <div v-show="list" class="topic-list">
     <section v-show="list" class="d-flex justify-content-between">
       <ul class="d-flex gap-3">
         <li v-for="item in navItems" class="pe-3">
@@ -168,6 +168,14 @@ h4 {
 .ham-ft {
   padding: 25px;
   text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .topic-list {
+    display: none !important;
+  }
+
+  
 }
 
 </style>

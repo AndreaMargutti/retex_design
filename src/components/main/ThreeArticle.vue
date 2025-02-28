@@ -10,19 +10,24 @@ export default {
 
 <template>
     <section>
-        <div id="long-article" class="d-flex flex-column justify-content-end">
-            <p class="tag">ALLARMI</p>
-            <h1>
-                Il collasso dei ghiacciai negli scatti <br> 
-                del fotografo ambientale Fabiano Ventura
-            </h1>
-            <figure>
-                <img src="../../../public/d7312632d8e9cc247b26cdd7abe33d50.png" alt="">
-                <div>
-                    <h5>Di Ugo Lombi</h5>
-                    <h6>14 Luglio 2022</h6>
-                </div>
-            </figure>
+        <div id="long-article" class="d-flex justify-content-sm-between">
+            <div id="img-small" class="d-sm-none">
+
+            </div>
+            <div class="align-self-end">
+                <p class="tag">ALLARMI</p>
+                <h1>
+                    Il collasso dei ghiacciai negli scatti <br> 
+                    del fotografo ambientale Fabiano Ventura
+                </h1>
+                <figure>
+                    <img src="../../../public/d7312632d8e9cc247b26cdd7abe33d50.png" alt="">
+                    <div>
+                        <h5>Di Ugo Lombi</h5>
+                        <h6>14 Luglio 2022</h6>
+                    </div>
+                </figure>
+            </div>
         </div>
         <div>
             <!-- TODO: inserire gli altri due articoli -->
@@ -31,6 +36,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
+
 #long-article {
     min-height: 700px;
     background-image: url(../../../public/6b12b5889d6ddad962a628409ed1fb35.png);
@@ -59,6 +65,16 @@ figure {
       height: 50px;
       border-radius: 50%;
       margin-right: 25px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    #long-article {
+        background-image: none;
+    }
+
+    h1, figure {
+        color: black;
     }
   }
 

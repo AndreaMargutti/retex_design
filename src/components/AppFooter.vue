@@ -9,9 +9,9 @@ export default {
 </script>
 
 <template>
-  <section class="d-flex justify-content-between align-items-center">
-    <div>
-      <ul class="d-flex gap-4">
+  <section class="row align-items-center">
+    <div class="col-sm-9">
+      <ul class="d-sm-flex gap-4">
         <li>Il Gruppo</li>
         <li>Note Legali</li>
         <li>Chi Siamo</li>
@@ -21,7 +21,7 @@ export default {
         <li>Pubblicita</li>
       </ul>
     </div>
-    <div>
+    <div class="col-sm-3">
       <p>@1994-2022 Vita Societa Editoriale S.p.A.</p>
     </div>
   </section>
@@ -31,4 +31,22 @@ export default {
   section {
     min-height: 100px;
   }
+
+@media screen and (max-width: 576px) {
+  p{
+    padding-left: 1.5rem;
+  }
+
+
+  ul {
+    padding-top: 10px;
+    padding-left: 1.5rem;
+    li {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  }
+  
+}
 </style>
